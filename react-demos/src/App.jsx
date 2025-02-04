@@ -1,5 +1,11 @@
+import Add from "./components/Add";
+import Greet from "./components/Greet";
+
 const App = () => {
-  return <h1>Sameera!</h1>;
+  return <div>
+    <Greet/>
+    <Add/>
+  </div>;
 }
 
 export default App;
