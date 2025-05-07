@@ -13,7 +13,14 @@ const App = () => {
     {/* <Header/>
     <Main/>
     <Footer/> */}
-    <WelcomeMessage/>
+    {/* <WelcomeMessage/> */}
+
+    <section id="section">
+      <form >
+        <label htmlFor="name">Name</label>
+        <input type="text" placeholder="Enter Your Name"/>
+      </form>
+    </section>
   </div>
   );
 }
