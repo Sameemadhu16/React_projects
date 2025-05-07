@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import JSXRules from "./components/JSXRules";
 import Main from "./components/Main";
 import WelcomeMessage from "./components/WelcomeMessage";
 
@@ -10,17 +11,7 @@ const App = () => {
     //This is why we wrap everything in a div
     
   <div>
-    {/* <Header/>
-    <Main/>
-    <Footer/> */}
-    {/* <WelcomeMessage/> */}
-
-    <section id="section">
-      <form >
-        <label htmlFor="name">Name</label>
-        <input type="text" placeholder="Enter Your Name"/>
-      </form>
-    </section>
+    <JSXRules/>
   </div>
   );
 }
