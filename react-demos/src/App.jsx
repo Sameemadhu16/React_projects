@@ -1,20 +1,28 @@
-import React, { useState } from 'react'
-import MyButton from './components/MyButton'
+export default function Board() {
 
-export default function App() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-    console.log(count + 1);
+  function Square({value}) {
+    return <button className="square">{value}</button>;
   }
 
   return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
-    </div>
-  )
+    <>
+      <div className="board-row">
+        <Square value="1" />
+        <Square value="2" />
+        <Square value="3" />
+      </div>
+      <div className="board-row">
+        <Square value="4" />
+        <Square value="5" />
+        <Square value="6" />
+      </div>
+      <div className="board-row">
+        <Square value="7" />
+        <Square value="8" />
+        <Square value="9" />
+      </div>
+    </>
+  );
 }
 
+// passing props
