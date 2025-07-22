@@ -1,19 +1,22 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import JSXRules from "./components/JSXRules";
-import Main from "./components/Main";
-import WelcomeMessage from "./components/WelcomeMessage";
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
+};
 
-const App = () => {
+export default function Profile() {
   return (
-
-    //JSX expressions must have one parent element
-    //This is why we wrap everything in a div
-    
-  <div>
-    <JSXRules/>
-  </div>
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
   );
 }
-
-export default App;
