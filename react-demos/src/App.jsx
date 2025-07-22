@@ -12,6 +12,7 @@ export default function Profile() {
     <>
       {/* <ShoppingList/> */}
       <MyButton/>
+      <MyButton/>
     </>
   );
 }
