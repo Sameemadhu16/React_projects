@@ -1,28 +1,20 @@
-import MyButton from "./components/MyButton";
-import ShoppingList from "./components/ShoppingList";
+import React, { useState } from 'react'
+import MyButton from './components/MyButton'
 
-// const user = {
-//   name: 'Hedy Lamarr',
-//   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-//   imageSize: 90,
-// };
+export default function App() {
+  const [count, setCount] = useState(0);
 
-export default function Profile() {
+  function handleClick() {
+    setCount(count + 1);
+    console.log(count + 1);
+  }
+
   return (
-    <>
-      {/* <ShoppingList/> */}
-      <MyButton/>
-      <MyButton/>
-    </>
-  );
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  )
 }
 
-
-// conditional operator
-{/* <div>
-  {isLoggedIn ? (
-    <AdminPanel />
-  ) : (
-    <LoginForm />
-  )}
-</div> */}
