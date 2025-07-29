@@ -21,6 +21,9 @@ function Form() {
     <Panel title="Welcome">
       <Button>Sign up</Button>
       <Button>Log in</Button>
+      <ThemeContext.Provider value="light">
+        <Footer />
+      </ThemeContext.Provider>
     </Panel>
   );
 }
@@ -43,5 +46,13 @@ function Button({ children, onClick }) {
     <button className={className} onClick={onClick}>
       {children}
     </button>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <Button>Settings</Button>
+    </footer>
   );
 }
