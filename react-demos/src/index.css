@@ -1,0 +1,66 @@
+/* Dark theme styles */
+.panel-dark {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.panel-dark h1 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.button-dark {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-dark:hover {
+  background-color: #555;
+}
+
+/* Light theme styles (for comparison) */
+.panel-light {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.panel-light h1 {
+  color: #000000;
+  margin-top: 0;
+}
+
+.button-light {
+  background-color: #f0f0f0;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-light:hover {
+  background-color: #e0e0e0;
+}
+
+/* Base body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
